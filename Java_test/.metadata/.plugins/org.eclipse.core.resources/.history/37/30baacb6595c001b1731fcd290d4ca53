@@ -1,0 +1,39 @@
+package test_code;
+
+import java.util.Scanner;
+
+public class test_code {
+	public int same() {
+		while (true) {
+			Scanner in = new Scanner(System.in);
+			System.out.print("Press enter to conitnue");
+			String str = in.nextLine();
+			if (str.contentEquals("")) {
+				System.out.println("print");
+				return 1;
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean test = true;
+		Scanner in = new Scanner(System.in);
+		int display = in.nextInt();
+		while (test) {
+			System.out.println("이걸 출력하면 성공");
+
+			switch (display) {
+			case 1:
+				System.out.println("1번입니다.");
+				break;
+			case 2:
+				System.out.println("2번입니다.");
+				break;
+			case 3:
+				System.out.println("3번입니다.");
+				break;
+			}
+		}
+	}
+}
